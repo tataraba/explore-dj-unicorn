@@ -1,4 +1,5 @@
 {% load unicorn %}
+{% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +12,7 @@
   
   
   {% load static %}
-  {% block styles %}
-  {% endblock %}
+  {% tailwind_css %}
 
   {% unicorn_scripts %}
 </head>

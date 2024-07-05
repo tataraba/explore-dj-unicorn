@@ -1,0 +1,31 @@
+{% load unicorn %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>What Should I Eat?</title>
+  <meta name="description" content="Mario's Meal Planner"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  
+  
+  {% load static %}
+  {% block styles %}
+  {% endblock %}
+
+  {% unicorn_scripts %}
+</head>
+
+<body>
+
+{% block nav %}
+{% unicorn 'nav' %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% csrf_token %}
+</body>
+</html>

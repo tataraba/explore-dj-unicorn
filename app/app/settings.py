@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     "tailwind",
-    "django_browser_reload"
     "theme",
+    "django_browser_reload",
     "django_unicorn",
 ]
 

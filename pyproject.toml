@@ -10,6 +10,7 @@ dependencies = [
     "django-unicorn>=0.60.0",
     "django-tailwind[reload]>=3.8.0",
     "pip>=24.1.1",
+    "neapolitan>=24.5",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"

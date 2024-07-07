@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Meals</h1>
+
+{% if not meals %}
+
+<p class="font-bold text-red-700">No meals found.</p>
+
+{% endif %}
+
+{% for meal in meals %}
+
+<h2>{{ meal.name }}</h2>
+
+{% endfor %}
+
+
+{% endblock %}

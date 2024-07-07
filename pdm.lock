@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.2"
-content_hash = "sha256:72329982c10d7658fb5784483c87a21bafab32d02c5c2ddd322351865c3c9377"
+content_hash = "sha256:0806df8684e34e89797acd1666ddb11c6d922b18cc405b144f78b8fd7c473f81"
 
 [[package]]
 name = "asgiref"
@@ -86,6 +86,20 @@ files = [
 ]
 
 [[package]]
+name = "django-filter"
+version = "24.2"
+requires_python = ">=3.8"
+summary = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
+groups = ["default"]
+dependencies = [
+    "Django>=4.2",
+]
+files = [
+    {file = "django-filter-24.2.tar.gz", hash = "sha256:48e5fc1da3ccd6ca0d5f9bb550973518ce977a4edde9d2a8a154a7f4f0b9f96e"},
+    {file = "django_filter-24.2-py3-none-any.whl", hash = "sha256:df2ee9857e18d38bed203c8745f62a803fa0f31688c9fe6f8e868120b1848e48"},
+]
+
+[[package]]
 name = "django-tailwind"
 version = "3.8.0"
 requires_python = ">=3.10.0,<4.0.0"
@@ -132,6 +146,20 @@ dependencies = [
 files = [
     {file = "django_unicorn-0.60.0-py3-none-any.whl", hash = "sha256:763eb7a654d9703398044dc697af381e8c6b4bf0e3c3e3806e6714d5ca50a592"},
     {file = "django_unicorn-0.60.0.tar.gz", hash = "sha256:fe988e32dbf71a47435b456be6b6e146391af365097b8a51bfe56a2648822919"},
+]
+
+[[package]]
+name = "neapolitan"
+version = "24.5"
+summary = "Neapolitan: quick CRUD views for Django."
+groups = ["default"]
+dependencies = [
+    "Django",
+    "django-filter",
+]
+files = [
+    {file = "neapolitan-24.5-py2.py3-none-any.whl", hash = "sha256:0048b5532901a4b292831b0de0e5931069d458e4fe4a70d83f07ecd66f152787"},
+    {file = "neapolitan-24.5.tar.gz", hash = "sha256:b5547db9466174ecd6931ac451e81bb3dda5d710f325822ba737dbe245309161"},
 ]
 
 [[package]]

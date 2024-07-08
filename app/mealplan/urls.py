@@ -1,5 +1,5 @@
 from django.urls import path
-from neapolitan.views import CRUDView
+from neapolitan.views import CRUDView, Role
 
 from . import views
 from . import models
@@ -12,6 +12,5 @@ class MealView(CRUDView):
 
 urlpatterns = [
     path("", views.index, name="index"),
+    *MealView.get_urls(),
 ]
-
-urlpatterns += MealView.get_urls()

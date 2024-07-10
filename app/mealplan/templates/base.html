@@ -2,15 +2,16 @@
 {% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>What Should I Eat?</title>
-  <meta name="description" content="Mario's Meal Planner"/>
-  <meta name="HandheldFriendly" content="True"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-  
-  
+  <meta name="description" content="Mario's Meal Planner" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+
   {% load static %}
   {% tailwind_css %}
 
@@ -19,13 +20,16 @@
 
 <body>
 
-{% block nav %}
-{% unicorn 'nav' %}
-{% endblock %}
+  {% block nav %}
+  {% unicorn 'nav' %}
 
-{% block content %}
-{% endblock %}
+  {% unicorn 'tabs' %}
+  {% endblock %}
 
-{% csrf_token %}
+  {% block content %}
+  {% endblock %}
+
+  {% csrf_token %}
 </body>
+
 </html>

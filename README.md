@@ -3,8 +3,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/tataraba/explore-dj-unicorn.svg)](https://github.com/tataraba/explore-dj-unicorn/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/tataraba/explore-dj-unicorn.svg)](https://github.com/tataraba/explore-dj-unicorn/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -43,26 +43,9 @@ You can install Python from [Python.org](https://www.python.org)
 
 ### Installing
 
-Clone the project to your local machine. If you are unsure how to do that, refer to documentation on Github.
-
-Once you have cloned the project to a local directory, create a virtual environment (make sure to navigate to the project root folder).
-
-```
-python -m venv .venv
-```
-
-Activate the environment
-
-```
-source venv/bin/activate
-```
-
-Then install the requirements.
-
-```
-python -m pip install -r requirements.txt
-```
-
+1. Clone the project to your local machine. If you are unsure how to do that, refer to documentation on Github.
+2. Make sure that `pdm` is installed: https://pdm-project.org/en/latest/#installation.
+3. `pdm install`
 
 
 ## 🔧 Running the tests <a name = "tests"></a>
@@ -75,7 +58,7 @@ Once tests are configured, you'll be able to run them 😅
 You should be able to run the project like any other Django project, using the appropriate Django command.
 
 ```
-python manage.py runserver
+pdm run python manage.py runserver
 ```
 
 

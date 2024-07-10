@@ -1,0 +1,33 @@
+<div class="flex justify-center h-10 bg-teal-600">
+  <strong>unicorn:click which calls a method</strong>
+
+  <ul class="flex flex-row">
+    <li><a class="px-6" href="javascript:void(0)" unicorn:click="set_tab(1)">First link</a></li>
+    <li><a class="px-6" href="javascript:void(0)" unicorn:click="set_tab(2)">Second link</a></li>
+    <li><a class="px-6" href="javascript:void(0)" unicorn:click="set_tab(3)">Third link</a></li>
+  </ul>
+
+  <strong>unicorn:click which sets a component variable</strong>
+
+  <ul class="flex flex-row">
+    <li><a class="px-6" href="javascript:void(0)" unicorn:click="tab=1">First link</a></li>
+    <li><a class="px-6" href="javascript:void(0)" unicorn:click="tab=2">Second link</a></li>
+    <li><a class="px-6" href="javascript:void(0)" unicorn:click="tab=3">Third link</a></li>
+  </ul>
+
+  <div>
+    tab: {{ tab }}
+  </div>
+
+  <div>
+    {% if tab == 1 %}
+    This is the content when the first tab is clicked.
+    {% elif tab == 2 %}
+    This is the content when the second tab is clicked.
+    {% elif tab == 3 %}
+    This is the content when the third tab is clicked.
+    {% else %}
+    This is the content when no tab is clicked.
+    {% endif %}
+  </div>
+</div>
